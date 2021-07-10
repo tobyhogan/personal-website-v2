@@ -173,13 +173,34 @@ form input,
 form label,
 form textarea {
   display: block;
-  font-size: 3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Calibri;
 }
 
 form input,
 form textarea {
   margin: 2rem auto;
   width: 50%;
+  font-family: Calibri;
+  background: rgb(207, 79, 79);
+  color: white;
+}
+
+form input {
+  border: 0.2rem solid rgb(207, 79, 79);
+}
+
+form textarea {
+  border: 0.2rem solid white;
+}
+
+input:focus {
+  outline: 0.25rem solid rgb(207, 79, 79);
+}
+
+textarea:focus {
+  outline: 0.25rem solid white;
 }
 
 footer {
