@@ -9,8 +9,10 @@ html {
 }
 
 hr {
-  border-top: 0.3rem solid rgb(116, 115, 115);
-  display: block;
+  border: none;
+  border-color: rgb(207, 79, 79);
+  background-color: rgb(207, 79, 79);
+  height: 0.4rem;
 }
 
 .clear {
@@ -59,4 +61,77 @@ nav li a {
 .about-me-section h3 {
   font-size: 1.5rem;
   padding: 3rem;
+}
+
+.projects-section {
+  height: 30rem;
+  text-align: center;
+  background: rgb(255, 153, 153);
+  color: white;
+  padding-top: 10rem;
+}
+
+.projects-section h2 {
+  font-size: 3rem;
+}
+
+.projects-section h3 {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+.experience-section {
+  height: 30rem;
+  text-align: center;
+  background: rgb(255, 153, 153);
+  color: white;
+  padding-top: 10rem;
+}
+
+.experience-section h2 {
+  font-size: 3rem;
+}
+
+.experience-section h3 {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+.get-in-touch-section {
+  height: 30rem;
+  text-align: center;
+  background: rgb(255, 153, 153);
+  color: white;
+  padding-top: 10rem;
+}
+
+.get-in-touch-section h2 {
+  font-size: 3rem;
+}
+
+.get-in-touch-section h3 {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+footer {
+  background: rgb(207, 79, 79);
+  height: 8.8rem;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding-top: 3.5rem;
+}
+
+footer ul li {
+  display: inline;
+  margin: 3.8rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+footer ul li a {
+  color: white;
 }
