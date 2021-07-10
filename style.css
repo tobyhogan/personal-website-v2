@@ -8,6 +8,11 @@ html {
   font-size: 62.5%;
 }
 
+hr {
+  border-top: 0.3rem solid rgb(116, 115, 115);
+  display: block;
+}
+
 .clear {
   clear: both;
 }
@@ -37,4 +42,21 @@ nav li {
 nav li a {
   text-decoration: none;
   color: white;
+}
+
+.about-me-section {
+  height: 30rem;
+  text-align: center;
+  background: rgb(255, 153, 153);
+  color: white;
+  padding-top: 10rem;
+}
+
+.about-me-section h2 {
+  font-size: 3rem;
+}
+
+.about-me-section h3 {
+  font-size: 1.5rem;
+  padding: 3rem;
 }
