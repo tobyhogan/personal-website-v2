@@ -134,6 +134,12 @@ nav li a {
   border: 0.3rem solid white;
 }
 
+.download-cv-section figcaption {
+  color: white;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
 .download-cv-section img:hover {
   cursor: pointer;
 }
@@ -156,11 +162,24 @@ nav li a {
 }
 
 .contact-form-section {
-  height: 30rem;
+  height: 60rem;
   text-align: center;
   background: rgb(255, 153, 153);
   color: white;
   padding-top: 10rem;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+  font-size: 3;
+}
+
+form input,
+form textarea {
+  margin: 2rem auto;
+  width: 50%;
 }
 
 footer {

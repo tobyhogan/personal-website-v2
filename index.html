@@ -53,10 +53,14 @@
       <h2>Download My CV</h2>
       <a
         href="https://drive.google.com/uc?id=1mTgq3nf1UAoi2r66_oGH_taIg5NXZPit&export=download"
-        ><img
-          src="/images/iconmonstr-download-2-240 (1).png"
-          alt="download symbol"
-      /></a>
+        ><figure>
+          <img
+            src="/images/iconmonstr-download-2-240 (1).png"
+            alt="download symbol"
+          />
+          <figcaption>.docx</figcaption>
+        </figure></a
+      >
     </section>
     <hr />
     <section class="get-in-touch-section" id="get-in-touch-section">
@@ -68,7 +72,22 @@
       </h3>
     </section>
     <hr class="dotted-hr" />
-    <section class="contact-form-section"></section>
+    <section class="contact-form-section">
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name-input" />
+        <label for="email-input">Email:</label>
+        <input type="email" name="email" id="email-input" />
+        <label for="message-input">Message:</label>
+        <textarea
+          name="message"
+          id="message-input"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button>Submit</button>
+      </form>
+    </section>
     <footer>
       <ul>
         <li>Mobile: (+44) 7455 182007</li>
