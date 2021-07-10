@@ -12,7 +12,23 @@ hr {
   border: none;
   border-color: rgb(207, 79, 79);
   background-color: rgb(207, 79, 79);
+  height: 0.6rem;
+}
+
+hr.dotted-hr {
+  border: none;
+  border-top: dotted;
+  border-color: rgb(207, 79, 79);
+  background-color: rgb(255, 153, 153);
   height: 0.4rem;
+}
+
+h2 {
+  font-family: Calibri;
+}
+
+h3 {
+  font-family: Calibri;
 }
 
 .clear {
@@ -39,6 +55,7 @@ nav li {
   float: left;
   font-size: 2rem;
   margin: 3rem;
+  font-family: Calibri;
 }
 
 nav li a {
@@ -97,6 +114,30 @@ nav li a {
   padding: 3rem;
 }
 
+.download-cv-section {
+  height: 30rem;
+  text-align: center;
+  background: rgb(255, 153, 153);
+  color: white;
+  padding-top: 10rem;
+}
+
+.download-cv-section h2 {
+  font-size: 2rem;
+}
+
+.download-cv-section img {
+  margin: 2rem;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 0.3rem solid white;
+}
+
+.download-cv-section img:hover {
+  cursor: pointer;
+}
+
 .get-in-touch-section {
   height: 30rem;
   text-align: center;
@@ -112,6 +153,14 @@ nav li a {
 .get-in-touch-section h3 {
   font-size: 1.5rem;
   padding: 3rem;
+}
+
+.contact-form-section {
+  height: 30rem;
+  text-align: center;
+  background: rgb(255, 153, 153);
+  color: white;
+  padding-top: 10rem;
 }
 
 footer {
