@@ -13,22 +13,28 @@ html {
 }
 
 nav {
-  background: rgb(196, 58, 58);
+  background: rgb(207, 79, 79);
   color: white;
 }
-
 
 nav h1 {
   float: left;
   font-size: 2.8rem;
-  margin: 3rem;.
+  margin: 3rem;
 }
 
-nav a {
+nav ul {
   float: right;
+  list-style: none;
+}
+
+nav li {
+  float: left;
   font-size: 2rem;
   margin: 3rem;
+}
+
+nav li a {
   text-decoration: none;
   color: white;
 }
-
