@@ -185,22 +185,30 @@ form textarea {
   font-family: Calibri;
   background: rgb(207, 79, 79);
   color: white;
+  border-radius: 5px;
 }
 
-form input {
-  border: 0.2rem solid rgb(207, 79, 79);
-}
-
+form input,
 form textarea {
-  border: 0.2rem solid white;
+  border: 0.1rem solid white;
 }
 
-input:focus {
-  outline: 0.25rem solid rgb(207, 79, 79);
+form input:focus,
+form textarea:focus {
+  outline: 0.15rem solid white;
 }
 
-textarea:focus {
-  outline: 0.25rem solid white;
+form button {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: 0.2rem solid rgb(207, 79, 79);
+  background: rgb(255, 217, 217);
+}
+
+form button:hover {
+  background: rgb(214, 129, 129);
+  color: white;
 }
 
 footer {
