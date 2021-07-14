@@ -1,106 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Toby Hogan | Student</title>
-    <link rel="icon" href="images/keyboard_5643.ico" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/images/iconmonstr-user-20-240 (1).png" />
     <link rel="stylesheet" href="style.css" />
+    <title>Toby Hogan | Student</title>
   </head>
   <body>
     <header>
-      <nav>
-        <h1 id="logo">Toby Hogan</h1>
-        <ul>
-          <li><a href="#about-me-section">About Me</a></li>
-          <li><a href="#projects-section">Projects</a></li>
-          <li><a href="#experience-section">Experience</a></li>
-          <li><a href="#get-in-touch-section">Get In Touch</a></li>
-        </ul>
-        <div class="clear"></div>
-      </nav>
+      <h1>About Me</h1>
     </header>
-    <section class="about-me-section">
-      <h2>About Me</h2>
-      <h3>
-        Hi, My name's Toby. I'm a 16 year old software developer who has worked
-        on several projects in python, html and css. This is one of my projects
-        in fact!
-      </h3>
-    </section>
-    <hr />
-    <section class="projects-section" id="projects-section">
-      <h2>Projects</h2>
-      <h3>
-        I started looking into programming when I was about 13, working on some
-        very simple python applications. I really started getting into
-        programming when I was 15, using python to create some GUIs. In this
-        section of the website, you will be able to see some of the different
-        things that I've worked on.
-      </h3>
-    </section>
-    <hr />
-    <section class="experience-section" id="experience-section">
-      <h2>Experience</h2>
-      <h3>
-        In this section you can take a look at my schooling and other
-        professional experiences I've had and awards I've got.
-      </h3>
-    </section>
-    <hr class="dotted-hr" />
-    <section class="download-cv-section">
-      <h2>Download My CV</h2>
-      <a
-        href="https://drive.google.com/uc?id=1by8ASfs_cYKMiIrB_ku-cRt0H3mQCJGt&export=download"
-        ><figure>
-          <img
-            src="/images/iconmonstr-download-2-240 (1).png"
-            alt="download symbol"
-          />
-          <figcaption>.pdf</figcaption>
-        </figure>
-      </a>
-    </section>
-    <hr />
-    <section class="get-in-touch-section" id="get-in-touch-section">
-      <h2>Let's Get In Touch!</h2>
-      <h3>
-        If you like what you see and want to ask me some more questions or speak
-        to me for any reason what so ever, feel free to use the contact form
-        below, or contact me using the phone number and email address given.
-      </h3>
-    </section>
-    <hr class="dotted-hr" />
-    <section class="contact-form-section">
-      <form action="" autocomplete="off">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name-input" />
-        <label for="email-input">Email:</label>
-        <input type="email" name="email" id="email-input" />
-        <label for="message-input">Message:</label>
-        <textarea
-          name="message"
-          id="message-input"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button>Submit</button>
-      </form>
-    </section>
-    <footer>
+    <menu>
       <ul>
-        <li>Mobile: (+44) 7455 182007</li>
-        <li>Email: tobyhogan44@gmail.com</li>
-        <li>
-          <a href="https://github.com/silver787" target="_blank">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.hackerrank.com/tobyhogan44" target="_blank"
-            >HackerRank</a
-          >
-        </li>
+        <a href="/index.html">
+          <li id="about-me-button">
+            <img src="/images/iconmonstr-user-20-240.png" alt="about me" />
+          </li>
+        </a>
+        <a href="#">
+          <li id="experience-button">
+            <img
+              src="/images/iconmonstr-briefcase-1-240.png"
+              alt="experience"
+            />
+          </li>
+        </a>
+        <a href="#">
+          <li id="projects-button">
+            <img src="/images/iconmonstr-computer-4-240.png" alt="projects" />
+          </li>
+        </a>
+        <a href="#">
+          <li id="contact-button">
+            <img src="/images/iconmonstr-phone-1-240.png" alt="contact" />
+          </li>
+        </a>
       </ul>
-    </footer>
+    </menu>
+    <article>
+      <h2>
+        Hi, I'm Toby. I'm a 16 year old who is very interested in maths, science
+        and computer programming. I started programming when I was about 13,
+        completing simple tasks on websites like Codecademy and learning Python.
+        <br /><br />
+        then started getting into some different sorts of projects when I was
+        about 15 and using them for my computer science class, I build GUIs,
+        games and lots of other fun things!<br /><br />I was actually born in
+        Brisbane, Australia, but moved to England when I was around 4. I prefer
+        it in England, it's much, much cooler and there aren't so many deadly
+        animals - I am glad to say that the Python I am associated with now,
+        doesn't bite!. <br /><br />I really do like travelling and hope to do
+        much more when I'm older. There seem to be some really great places in
+        europe to go, and it's fairly close so I think that will be a place to
+        visit for sure!
+      </h2>
+    </article>
   </body>
 </html>

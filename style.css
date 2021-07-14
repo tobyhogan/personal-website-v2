@@ -1,236 +1,127 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
 }
 
-hr {
-  border: none;
-  border-color: rgb(207, 79, 79);
-  background-color: rgb(207, 79, 79);
-  height: 0.6rem;
-}
-
-hr.dotted-hr {
-  border: none;
-  border-top: dotted;
-  border-color: rgb(207, 79, 79);
-  background-color: rgb(255, 153, 153);
-  height: 0.4rem;
-}
-
 h2 {
-  font-family: Calibri;
+  font-size: 10px;
 }
 
-h3 {
-  font-family: Calibri;
-}
-
-.clear {
-  clear: both;
-}
-
-nav {
-  background: rgb(207, 79, 79);
+body {
+  background: #292d3e;
   color: white;
+  font-family: "Dosis", sans-serif;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 70px auto;
+  grid-template-rows: 70px auto;
 }
 
-nav h1 {
-  float: left;
-  font-size: 2.8rem;
-  margin: 2.8rem 6rem;
-  font-family: Calibri;
+header {
+  text-align: center;
+  padding: 0.7rem 0rem;
+  width: 100%;
+  background-color: #00818a;
+  border: solid 2px white;
+  transition: 0.5s ease-out;
+  height: 70px;
+  grid-column: 1 / span 2;
+  position: fixed;
 }
 
-nav ul {
-  float: right;
+header h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+}
+
+menu {
+  margin-top: 10rem;
+  font-size: 10px;
+  position: fixed;
+}
+
+menu ul {
+  text-align: center;
   list-style: none;
+  text-transform: capitalize;
 }
 
-nav li {
-  float: left;
-  font-size: 2rem;
-  margin: 3rem;
-  font-family: Calibri;
-  font-weight: bold;
-}
-
-nav li a {
-  text-decoration: none;
-  color: white;
-}
-
-.about-me-section {
-  height: 30rem;
-  text-align: center;
-  background: rgb(255, 153, 153);
-  color: white;
-  padding-top: 10rem;
-}
-
-.about-me-section h2 {
-  font-size: 3rem;
-}
-
-.about-me-section h3 {
-  font-size: 1.5rem;
-  padding: 3rem;
-}
-
-.projects-section {
-  height: 30rem;
-  text-align: center;
-  background: rgb(255, 153, 153);
-  color: white;
-  padding-top: 10rem;
-}
-
-.projects-section h2 {
-  font-size: 3rem;
-}
-
-.projects-section h3 {
-  font-size: 1.5rem;
-  padding: 3rem;
-}
-
-.experience-section {
-  height: 30rem;
-  text-align: center;
-  background: rgb(255, 153, 153);
-  color: white;
-  padding-top: 10rem;
-}
-
-.experience-section h2 {
-  font-size: 3rem;
-}
-
-.experience-section h3 {
-  font-size: 1.5rem;
-  padding: 3rem;
-}
-
-.download-cv-section {
-  height: 30rem;
-  text-align: center;
-  background: rgb(255, 153, 153);
-  color: white;
-  padding-top: 10rem;
-}
-
-.download-cv-section h2 {
-  font-size: 2rem;
-}
-
-.download-cv-section img {
-  margin: 2rem;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  border: 0.3rem solid white;
-}
-
-.download-cv-section figcaption {
-  color: white;
-  text-decoration: underline;
-  font-size: 1.5rem;
-}
-
-.download-cv-section img:hover {
+menu ul li {
+  line-height: 70px;
+  position: relative;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
+  background: #00818a;
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
+  border: solid 2px white;
+  margin: 1px 0px;
 }
 
-.get-in-touch-section {
-  height: 30rem;
-  text-align: center;
-  background: rgb(255, 153, 153);
+menu ul li::after {
+  position: absolute;
+  background: white;
+  color: #00818a;
+  top: 0;
+  left: 70px;
+  width: 63px;
+  height: 63px;
+  transform: rotateY(90deg);
+  transform-origin: 0 100%;
+  transition: all 0.4s ease-out;
+  border: solid 2px #00818a;
+}
+
+#about-me-button::after {
+  content: "about me";
+  line-height: 65px;
+}
+#experience-button::after {
+  content: "experience";
+  line-height: 65px;
+}
+#projects-button::after {
+  content: "projects";
+  line-height: 65px;
+}
+#contact-button::after {
+  content: "say hi!";
+  line-height: 65px;
+}
+
+menu ul li:hover {
+  transform: translateX(-70px);
+}
+
+menu ul li:hover:after {
+  opacity: 1;
+  transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+menu img {
+  width: 30px;
+  height: 30px;
+  margin: 17px;
+}
+
+article {
   color: white;
-  padding-top: 10rem;
+  margin: 5%;
+  grid-column: 2;
+  grid-row: 2;
 }
 
-.get-in-touch-section h2 {
-  font-size: 3rem;
+article h2 {
+  font-size: 2rem;
 }
 
-.get-in-touch-section h3 {
-  font-size: 1.5rem;
-  padding: 3rem;
-}
-
-.contact-form-section {
-  height: 60rem;
-  text-align: center;
-  background: rgb(255, 153, 153);
-  color: white;
-  padding-top: 10rem;
-}
-
-form input,
-form label,
-form textarea {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: Calibri;
-}
-
-form input,
-form textarea {
-  margin: 2rem auto;
-  width: 50%;
-  font-family: Calibri;
-  background: rgb(207, 79, 79);
-  color: white;
-  border-radius: 5px;
-}
-
-form input,
-form textarea {
-  border: 0.1rem solid white;
-}
-
-form input:focus,
-form textarea:focus {
-  outline: 0.15rem solid white;
-}
-
-form button {
-  width: 7rem;
-  height: 3rem;
-  border-radius: 5px;
-  border: 0.2rem solid rgb(207, 79, 79);
-  background: rgb(255, 217, 217);
-}
-
-form button:hover {
-  background: rgb(214, 129, 129);
-  color: white;
-}
-
-footer {
-  background: rgb(207, 79, 79);
-  height: 8.8rem;
-  text-align: center;
-}
-
-footer ul {
-  list-style: none;
-  padding-top: 3.5rem;
-}
-
-footer ul li {
-  display: inline;
-  margin: 3.8rem;
-  color: white;
-  font-size: 1.5rem;
-}
-
-footer ul li a {
-  color: white;
+article .experience-display {
+  border: solid 2px white;
 }
